@@ -11,6 +11,7 @@
 	tks = tmux kill session
 
 ##Vim
+
 	<C-n> NERDTreeToggle - file tree plugin
 	<C-p> CtrlP - fuzzy search plugin
 	h,j,k,l = <-v^->  
