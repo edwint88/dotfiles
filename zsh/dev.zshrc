@@ -10,3 +10,10 @@ zstyle :compinstall filename '/Users/zartu/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+
+
+alias tma="tmux attach -d -t"
+alias tm="tmux ls"
+alias tms="tmux new -s"
+alias tmks="tmux kill-session -t"
+
