@@ -1,11 +1,43 @@
 syntax on
 set number
-set nocompatible 
+set nocompatible
 set ruler
-" highlight search and hl match while typing
-set hls is
-set tabstop=4
+
+" Searching
+set ignorecase              " case insensitive searching
+set smartcase               " case-sensitive if expresson contains a capital letter
+set hlsearch                " highlight search results
+set incsearch               " set incremental search, like modern browsers
+set nolazyredraw            " don't redraw while executing macros
+
+set magic                   " Set magic on, for regex
+
+set showmatch               " show matching braces
+set mat=2                   " how many tenths of a second to blink
+
+" error bells
+set noerrorbells
+set visualbell
+set t_vb=
+set tm=500
+
 set mouse=a
+
+" Tab control
+set noexpandtab             " insert tabs rather than spaces for <Tab>
+set smarttab                " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
+set tabstop=4               " the visible width of tabs
+set softtabstop=4           " edit as if the tabs are 4 characters wide
+set shiftwidth=4            " number of spaces to use for indent and unindent
+set shiftround              " round indent to a multiple of 'shiftwidth'
+set completeopt+=longest
+
+" code folding settings
+set foldmethod=syntax       " fold based on indent
+set foldnestmax=10          " deepest fold is 10 levels
+set nofoldenable            " don't fold by default
+set foldlevel=1
+
 " highlight pos of cursor(cu) line (l) and column(c)
 set cul cuc
 filetype off
@@ -29,6 +61,68 @@ endif
 set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
    \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
      \,sm:block-blinkwait175-blinkoff150-blinkon175
+
+" make comments and HTML attributes italic
+highlight Comment cterm=italic
+highlight htmlArg cterm=italic
+highlight xmlAttrib cterm=italic
+highlight Type cterm=italic
+highlight Normal ctermbg=none
+
+set autoindent              " automatically set indent of new line
+set smartindent
+
+" toggle invisible characters
+set list
+set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
+set showbreak=↪
+
+" highlight conflicts
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
+
+" make backspace behave in a sane manner
+set backspace=indent,eol,start
+
+set clipboard=unnamed
+
+set ttyfast                 " faster redrawing
+set diffopt+=vertical
+set laststatus=2            " show the satus line all the time
+set so=7                    " set 7 lines to the cursors - when moving vertical
+set wildmenu                " enhanced command line completion
+set hidden                  " current buffer can be put into background
+set showcmd                 " show incomplete commands
+set noshowmode              " don't show which mode disabled for PowerLine
+set wildmode=list:longest   " complete files like a shell
+set scrolloff=3             " lines of text around cursor
+set shell=$SHELL
+set cmdheight=1             " command bar height
+set title                   " set terminal title
+
+" Section Mappings {{{
+" set a map leader for more key combos
+let mapleader = ','
+
+" shortcut to save
+nmap <leader>, :w<cr>
+
+" set paste toggle
+set pastetoggle=<leader>v
+
+" clear highlighted search
+noremap <space> :set hlsearch! hlsearch?<cr>
+
+" remove extra whitespace
+nmap <leader><space> :%s/\s\+$<cr>
+nmap <leader><space><space> :%s/\n\{2,}/\r\r/g<cr>
+
+" scroll the viewport faster
+nnoremap <C-e> 3<C-e>
+nnoremap <C-y> 3<C-y>
+
+" }}}
+
+" Section Plugins {{{
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -71,7 +165,16 @@ filetype plugin indent on    " required
 " To install from command line: vim +PluginInstall +qall
 
 " Actions
-map <C-n> :NERDTreeToggle<CR>
+" map <C-n> :NERDTreeToggle<CR>
+" Toggle NERDTree
+nmap <silent> <leader>k :NERDTreeToggle<cr>
+" expand to the path of the file in the current buffer
+ nmap <silent> <leader>y :NERDTreeFind<cr>
+
+let NERDTreeShowHidden=1
+let NERDTreeDirArrowExpandable = '▷'
+let NERDTreeDirArrowCollapsible = '▼'
+
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
@@ -87,3 +190,4 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+" }}}

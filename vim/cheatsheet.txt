@@ -45,6 +45,7 @@ Ctrl + O - repeat to go further back
 N Ctrl + D - go downwards N lines (1/2 window as def)
 N Ctrl + U - go upwards N lines
 N Ctrl + F vs N Ctrl + B - go downwards vs upwards
+Ctrl W + Ctrl W - to jump to another window
 
 % ({[ - find next one)}]
 :s/old/new/g - substitute (g - all in line)
@@ -53,6 +54,9 @@ N Ctrl + F vs N Ctrl + B - go downwards vs upwards
 :v - visual mode (press v 10 enter : w Name enter -> select 10 lines 
 	and save them in Name file)
 :r file|output - inserts the text at cursor location
+
+:help | F1 | :help cmd
+:e + Ctrl+D to autocomplete + Tab to select one possibility
 
 :set {option}x - x can be ? (show value) or & (reset to default)
 :set x{option} - x can be no or inv (inverse the option)
@@ -63,3 +67,11 @@ N Ctrl + F vs N Ctrl + B - go downwards vs upwards
 :set number - shows numbers
 :set mouse=a -enable mouse
 
+#Plugins
+(remaped leader from \ to ,)
+
+, + k - toggle nerdtree
+, + y - find file in tree
+, + , or :w - save
+
+ctrl + p - fuzzy search
