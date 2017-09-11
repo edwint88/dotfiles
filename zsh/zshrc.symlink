@@ -44,4 +44,10 @@ select-word-style bash
 # matches case insensitive for lowercase
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+# load plugins
+source ~/dotfiles/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+
+#activate plugins
+plugins=(zsh-history-substring-search)
+
 unset config_files
