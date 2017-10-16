@@ -1,3 +1,5 @@
+__Use the dotfiles on your own risk!!!__
+
 # Fonts
 	inconsolata -> https://fonts.google.com/specimen/Inconsolata?selection.family=Inconsolata
 
