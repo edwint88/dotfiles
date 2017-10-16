@@ -2,8 +2,9 @@
 	inconsolata -> https://fonts.google.com/specimen/Inconsolata?selection.family=Inconsolata
 
 # Keymaps
-## zsh
 
+## zsh
+#### tmux
 	ta = tmux attach
 	tm = tmux ls
 	tms = tmux new session
@@ -16,11 +17,6 @@
 	h,j,k,l = <-v^->  
 
 ## tmux
-
-- ta name-session -> attach session 
-- tm -> list sessions
-- tms name-session -> new session
-- tks name-session -> kill session 
 
 To enable vi like cursor movement in copy mode put the following in your ~/.tmux.conf:
 	set-window-option -g mode-keys vi
