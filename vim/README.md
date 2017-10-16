@@ -11,7 +11,7 @@ N + - goes down N lines\
 N % - go to line N % in the file\
 N w or b or e or ge - go N words with the cursor\
 N ) ( - move N sentences \<- or ->\
-N } { - move N paragraphs \<- or ->\
+N } { - move N paragraphs \<- or ->
 
 N . - repeats the last N commands\
 i - insert mode\
@@ -24,19 +24,19 @@ R - replace until ESC\
 y - yank\
 yy - yank a line\
 yw - yank a word\
-p - put (paste)\
+p - put (paste)
 
 G - go to last line\ 
 gg - go to first line\
 type number + G - go to specific line\
-type number + ENTER - go down number times\
+type number + ENTER - go down number times
 
 {n}w - move to word\
 {n}e - move to end of word\
-d (w e $ h j k l) - delete motion\
+d (w e $ h j k l) - delete motion
 
 d + # - delete until next word same as cursor\
-u - undo\ 
+u - undo
 
 Ctrl + G - print cursor location\
 Ctrl + R - redo\
@@ -45,18 +45,18 @@ Ctrl + O - repeat to go further back\
 N Ctrl + D - go downwards N lines (1/2 window as def)\
 N Ctrl + U - go upwards N lines\
 N Ctrl + F vs N Ctrl + B - go downwards vs upwards\
-Ctrl W + Ctrl W - to jump to another window\
+Ctrl W + Ctrl W - to jump to another window
 
 % ({\[ - find next one)}\]\
-:s/old/new/g - substitute (g - all in line)\
+:s/old/new/g - substitute (g - all in line)
 
 :! - type an external command\
 :v - visual mode (press v 10 enter : w Name enter -> select 10 lines 
 	and save them in Name file)\
-:r file|output - inserts the text at cursor location\
+:r file|output - inserts the text at cursor location
 
 :help | F1 | :help cmd\
-:e + Ctrl+D to autocomplete + Tab to select one possibility\
+:e + Ctrl+D to autocomplete + Tab to select one possibility
 
 :set {option}x - x can be ? (show value) or & (reset to default)\
 :set x{option} - x can be no or inv (inverse the option)\
@@ -65,10 +65,10 @@ Ctrl W + Ctrl W - to jump to another window\
 :set is - incsearch set partial matches for search phrase 
 	(better :set his is) | :set nois\
 :set number - shows numbers\
-:set mouse=a -enable mouse\
+:set mouse=a -enable mouse
 
 # Plugins
-(remaped leader from \ to ,)\
+(remaped leader from \\ to ,)
 
 , + k - toggle nerdtree\
 , + y - find file in tree\
