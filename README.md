@@ -23,7 +23,7 @@ To enable vi like cursor movement in copy mode put the following in your ~/.tmux
 	
 See buffer: tmux show-buffer\
 Save buffer: tmux save-buffer foo.txt\
-Paste all buffers: `C + #`\
+Paste all buffers: `C + #`
 
 tmux list-buffers\
 tmux show-buffer -b n\
