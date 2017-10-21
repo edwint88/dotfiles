@@ -29,10 +29,9 @@ bindkey -e
 
 # End of lines configured by zsh-newuser-install
 # The following lines were added by compinstall
-zstyle :compinstall filename '{$HOME}/.zshrc'
+#zstyle :compinstall filename '{$HOME}/.zshrc'
 
-autoload -Uz compinit
-compinit
+#autoload -Uz compinit && compinit
 # End of lines added by compinstall
 
 # change word operations (kill / navigate) to include slash as a word separator 
@@ -49,6 +48,7 @@ export ZSH=$HOME/dotfiles/oh-my-zsh
 source $ZSH/oh-my-zsh.sh
 
 #activate plugins
-plugins=(git git-flow history-substring-search zsh-navigation-tools zsh-autosuggestions zsh-completions)
+plugins=(git git-flow history-substring-search zsh-navigation-tools zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+autoload -Uz compinit && compinit
 
 unset config_files
