@@ -32,7 +32,8 @@ unsetopt FLOW_CONTROL      # Disable start/stop characters in shell editor.
 setopt COMPLETE_ALIASES
 
 # set themes
-ZSH_THEME="agnoster"
+#ZSH_THEME="agnoster"
+ZSH_THEME="powerlevel9k/powerlevel9k"
 
 #zle -N newtab
 
