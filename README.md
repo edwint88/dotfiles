@@ -44,4 +44,5 @@ https://awhan.wordpress.com/2010/06/20/copy-paste-in-tmux/
 
 # Inspirations
  	vim + tmux: https://github.com/nicknisi/dotfiles
+	all: https://blogs.technet.microsoft.com/jessicadeen/linux/macos-ohmyzsh-tmux-vim-iterm2-powerlevel9k-badass-terminal/
 
