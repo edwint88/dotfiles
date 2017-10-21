@@ -6,7 +6,7 @@ __Use the dotfiles on your own risk!!!__
 # Keymaps
 
 ## zsh
-	plugins
+__plugins__
 - zsh-completions
 - zsh-autosuggestions
 - zsh-syntax-highlighting
