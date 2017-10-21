@@ -45,10 +45,11 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # load plugins
 export ZSH=$HOME/dotfiles/oh-my-zsh
-source $ZSH/oh-my-zsh.sh
 
 #activate plugins
 plugins=(git git-flow history-substring-search zsh-navigation-tools zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+
+source $ZSH/oh-my-zsh.sh
 autoload -Uz compinit && compinit
 
 unset config_files

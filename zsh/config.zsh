@@ -27,6 +27,9 @@ setopt AUTO_PARAM_SLASH    # If completed parameter is a directory, add a traili
 unsetopt MENU_COMPLETE     # Do not autoselect the first completion entry.
 unsetopt FLOW_CONTROL      # Disable start/stop characters in shell editor.
 
+# zsh tmux settings
+ZSH_TMUX_AUTOSTART='true'
+
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
 setopt COMPLETE_ALIASES
