@@ -42,7 +42,7 @@ https://awhan.wordpress.com/2010/06/20/copy-paste-in-tmux/
 ## phpstorm
 
 
-# Inspirations
- 	vim + tmux: https://github.com/nicknisi/dotfiles
-	all: https://blogs.technet.microsoft.com/jessicadeen/linux/macos-ohmyzsh-tmux-vim-iterm2-powerlevel9k-badass-terminal/
+# Inspirations 
+- https://github.com/nicknisi/dotfiles
+- https://blogs.technet.microsoft.com/jessicadeen/linux/macos-ohmyzsh-tmux-vim-iterm2-powerlevel9k-badass-terminal/
 
