@@ -6,6 +6,11 @@ __Use the dotfiles on your own risk!!!__
 # Keymaps
 
 ## zsh
+	plugins
+- zsh-completions
+- zsh-autosuggestions
+- zsh-syntax-highlighting
+
 #### tmux
 	ta = tmux attach
 	tm = tmux ls
