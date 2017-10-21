@@ -1,9 +1,9 @@
 # shortcut to this dotfiles path is $ZSH
-export ZSH=$HOME/dotfiles
+export ZSH=$HOME/dotfiles/zsh
 
 # all of our zsh files
 typeset -U config_files
-config_files=($ZSH/zsh/*.zsh)
+config_files=($ZSH/*.zsh)
 
 # load the path files
 for file in ${(M)config_files:#*/path.zsh}
@@ -45,9 +45,13 @@ select-word-style bash
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # load plugins
-source ~/dotfiles/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+source $ZSH/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+plugins=(zsh-history-substring-search)
+
+export ZSH=$HOME/dotfiles/oh-my-zsh
+source $ZSH/oh-my-zsh.sh
 
 #activate plugins
-plugins=(zsh-history-substring-search)
+plugins=(git agnoster-zsh-theme)
 
 unset config_files

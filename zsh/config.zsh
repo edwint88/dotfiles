@@ -31,6 +31,9 @@ unsetopt FLOW_CONTROL      # Disable start/stop characters in shell editor.
 #   like: git comm-[tab]
 setopt COMPLETE_ALIASES
 
+# set themes
+ZSH_THEME="agnoster"
+
 #zle -N newtab
 
 # # when pasting in a URL, escape necessary chars (?, &, etc.)
