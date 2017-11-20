@@ -17,6 +17,8 @@ cdls() {
 }	
 
 # file system
+alias cls='clear'
+
 alias cd='cdls'
 alias ..='cd ..'
 alias ...='cd ../..'
