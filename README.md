@@ -6,7 +6,7 @@ __Use the dotfiles on your own risk!!!__
 # Keymaps
 
 ## zsh
-	plugins
+__plugins__
 - zsh-completions
 - zsh-autosuggestions
 - zsh-syntax-highlighting
@@ -42,6 +42,7 @@ https://awhan.wordpress.com/2010/06/20/copy-paste-in-tmux/
 ## phpstorm
 
 
-# Inspirations
- 	vim + tmux: https://github.com/nicknisi/dotfiles
+# Inspirations 
+- https://github.com/nicknisi/dotfiles
+- https://blogs.technet.microsoft.com/jessicadeen/linux/macos-ohmyzsh-tmux-vim-iterm2-powerlevel9k-badass-terminal/
 
