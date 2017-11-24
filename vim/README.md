@@ -75,3 +75,6 @@ Ctrl W + Ctrl W - to jump to another window
 , + , or :w - save\
 
 ctrl + p - fuzzy search
+
+# SO subjects
+https://stackoverflow.com/questions/46216382/comparing-files-with-itself-in-vim-or-any-other-method/46217823#46217823
