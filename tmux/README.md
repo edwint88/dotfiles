@@ -68,25 +68,25 @@ Uses TPM (https://github.com/tmux-plugins/tpm)
   
 ### Other Plugins
 - tmux resurrect (https://github.com/tmux-plugins/tmux-resurrect)
-    save env -> C + Ctrl + s
-    restore env -> C + Ctrl + r
+    * save env -> C + Ctrl + s
+    * restore env -> C + Ctrl + r
 - tmux continumm (https://github.com/tmux-plugins/tmux-continuum)
 - tmux copycat (https://github.com/tmux-plugins/tmux-copycat)
-    search regex -> C + /
-    C + ctrl-f -> simple file search
-    C + ctrl-g -> jumping over git status files (best used after git status command)
-    C + alt-h -> jumping over SHA-1 hashes (best used after git log command)
-    C + ctrl-u -> url search (http, ftp and git urls)
-    C + ctrl-d -> number search (mnemonic d, as digit)
-    C + alt-i -> ip address search
-    n,N -> next, previous find
+    * search regex -> C + /
+    * C + ctrl-f -> simple file search
+    * C + ctrl-g -> jumping over git status files (best used after git status command)
+    * C + alt-h -> jumping over SHA-1 hashes (best used after git log command)
+    * C + ctrl-u -> url search (http, ftp and git urls)
+    * C + ctrl-d -> number search (mnemonic d, as digit)
+    * C + alt-i -> ip address search
+    * n,N -> next, previous find
 - tmux yank (https://github.com/tmux-plugins/tmux-yank)
-    C + y -> copy (mouse select + y before let go)
-    C + Y -> copy pane
-    Copy Mode: 
-      y -> copy selection to clipboard
-      Y -> "put selection" (copy + paste)
+    * C + y -> copy (mouse select + y before let go)
+    * C + Y -> copy pane
+    * Copy Mode: 
+     *  y -> copy selection to clipboard
+     * Y -> "put selection" (copy + paste)
 - tmux open (https://github.com/tmux-plugins/tmux-open)
-    o ( + selected text) -> open selected text
-    Ctrl + o ( + selected text) -> open in editor (vim)
+    * o ( + selected text) -> open selected text
+    * Ctrl + o ( + selected text) -> open in editor (vim)
 
