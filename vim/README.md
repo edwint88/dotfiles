@@ -45,7 +45,6 @@ Ctrl + O - repeat to go further back\
 N Ctrl + D - go downwards N lines (1/2 window as def)\
 N Ctrl + U - go upwards N lines\
 N Ctrl + F vs N Ctrl + B - go downwards vs upwards\
-Ctrl W + Ctrl W - to jump to another window
 
 % ({\[ - find next one)}\]\
 :s/old/new/g - substitute (g - all in line)
@@ -67,6 +66,12 @@ Ctrl W + Ctrl W - to jump to another window
 :set number - shows numbers\
 :set mouse=a -enable mouse
 
+# Window
+
+Ctrl W + Ctrl W - to jump to another window
+vsp nameFile - open the file in a vertical split window
+
+
 # Plugins
 (remaped leader from \\ to ,)
 
@@ -75,3 +80,6 @@ Ctrl W + Ctrl W - to jump to another window
 , + , or :w - save\
 
 ctrl + p - fuzzy search
+
+# SO subjects
+https://stackoverflow.com/questions/46216382/comparing-files-with-itself-in-vim-or-any-other-method/46217823#46217823
