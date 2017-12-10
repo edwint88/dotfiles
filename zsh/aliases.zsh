@@ -11,15 +11,15 @@ fi
 alias reload!='RELOAD=1 source ~/.zshrc'
 
 # Custom cd
-cdls() {
+cdll() {
   	cd $1;
-	ls;
+	ll;
 }	
 
 # file system
 alias cls='clear'
 
-alias cd='cdls'
+alias cd='cdll'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....="cd ../../.."
