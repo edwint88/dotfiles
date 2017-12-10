@@ -13,7 +13,7 @@ alias reload!='RELOAD=1 source ~/.zshrc'
 # Custom cd
 cdll() {
   	cd $1;
-	ll;
+	ls -lFh ${colorflag};
 }	
 
 # file system
