@@ -84,8 +84,8 @@ Uses TPM (https://github.com/tmux-plugins/tpm)
     * C + y -> copy (mouse select + y before let go)
     * C + Y -> copy pane
     * Copy Mode: 
-     *  y -> copy selection to clipboard
-     * Y -> "put selection" (copy + paste)
+     ** y -> copy selection to clipboard
+     ** Y -> "put selection" (copy + paste)
 - tmux open (https://github.com/tmux-plugins/tmux-open)
     * o ( + selected text) -> open selected text
     * Ctrl + o ( + selected text) -> open in editor (vim)
