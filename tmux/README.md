@@ -60,6 +60,12 @@ __C = Ctrl + a__
 
 - reload config -> C + r
 
+## Aliases for tmux
+- ta="tmux attach -d -t"
+- tm="tmux ls"
+- tms="tmux new -s"
+- tks="tmux kill-session -t"
+
 ## Plugins
 Uses TPM (https://github.com/tmux-plugins/tpm)
   Install plugins -> C + I
