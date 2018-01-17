@@ -10,6 +10,9 @@ fi
 # reload zsh config
 alias reload!='RELOAD=1 source ~/.zshrc'
 
+# git
+alias logadog='git log --all --decorate --oneline --graph'
+
 # Custom cd
 cdll() {
   	cd $1;
