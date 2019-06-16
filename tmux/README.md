@@ -105,10 +105,11 @@ Uses TPM (https://github.com/tmux-plugins/tpm)
 	* C + > or < -> to change window order
 	* set-option -g @pane_resize "10" (default is 5)
 - tmux battery status (https://github.com/tmux-plugins/tmux-battery)
-- tmux cpu and gpu status (https://github.com/tmux-plugins/tmux-cpu)
+- ~~tmux cpu and gpu status (https://github.com/tmux-plugins/tmux-cpu)~~
 - tmux facebook fpp [REQ: install brew install fpp] (https://github.com/tmux-plugins/tmux-fpp)
 	* C + shift + F
 - tmux sidebar (https://github.com/tmux-plugins/tmux-sidebar)
 	* C + tab -> show side bar without focus
 	* C + backspace -> show side bar with focus
 - tmux prefix highlight (https://github.com/tmux-plugins/tmux-prefix-highlight)
+- tmux sysstat (https://github.com/samoshkin/tmux-plugin-sysstat)
