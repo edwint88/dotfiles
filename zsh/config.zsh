@@ -36,7 +36,10 @@ setopt COMPLETE_ALIASES
 
 # set themes
 #ZSH_THEME="agnoster"
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k"
+# install ruby rmv 
+ZSH_THEME="zsh2000"
 
 #zle -N newtab
 

@@ -14,19 +14,20 @@ alias reload!='RELOAD=1 source ~/.zshrc'
 alias logadog='git log --all --decorate --oneline --graph'
 
 # Custom cd
-cdll() {
-  	cd $1;
-	ls -lFh ${colorflag};
+function cdl() {
+ 	cd $1;
+	echo `pwd`":";
+	command ls -lFh ${colorflag};
 }	
 
 # file system
 alias cls='clear'
 
-alias cd='cdll'
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
+#alias cd='cdl'
+alias ..='cdl ..'
+alias ...='cdl ../..'
+alias ....="cdl ../../.."
+alias .....="cdl ../../../.."
 
 alias l="ls -lah ${colorflag}"
 alias la="ls -AF ${colorflag}"
