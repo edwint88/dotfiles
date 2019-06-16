@@ -65,7 +65,7 @@ setw -g pane-active-border-style "fg=$color_main"
 set-hook -g after-new-window 'command-prompt -I "#{window_name}" "rename-window '%%'"'
 
 # define widgets we're going to use in status bar
-	 note, that this is not the complete list, some of them are loaded from plugins
+#	 note, that this is not the complete list, some of them are loaded from plugins
 wg_session="#[fg=$color_session_text] #S #[default]"
 wg_battery="#{battery_status_fg} #{battery_icon} #{battery_percentage}"
 e="#[fg=$color_secondary]%h %d %H:%M#[default]"
