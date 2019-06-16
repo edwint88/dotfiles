@@ -53,9 +53,3 @@ source $ZSH/oh-my-zsh.sh
 autoload -Uz compinit && compinit
 
 unset config_files
-
-# enable fuzzy search in CLI
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
-# enable anaconda
-source /usr/local/miniconda3/bin/activate
