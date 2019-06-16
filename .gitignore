@@ -1,2 +1,3 @@
 # ignore tmux plugins -> to be downloaded
 tmux/plugins
+tmux/resurrect
