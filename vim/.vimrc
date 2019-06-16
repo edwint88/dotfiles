@@ -123,6 +123,8 @@ nnoremap <C-y> 3<C-y>
 " }}}
 
 " Section Plugins {{{
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -141,6 +143,13 @@ Plugin 'ctrlpvim/ctrlp.vim'
 
 " syntactics Plugin
 Plugin 'vim-syntastic/syntastic'
+
+" git gutter Plugin
+Plugin 'airblade/vim-gitgutter'
+
+" vim airline
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -190,4 +199,20 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+
+" gitgutter options
+highlight GitGutterAdd    guifg=#009900 guibg=<#073642> ctermfg=2 ctermbg=0
+highlight GitGutterChange guifg=#bbbb00 guibg=<#073642> ctermfg=3 ctermbg=0
+highlight GitGutterDelete guifg=#ff2222 guibg=<#073642> ctermfg=1 ctermbg=0
+
+let g:gitgutter_sign_added = '✓'
+let g:gitgutter_sign_removed = '✗'
+let g:gitgutter_sign_modified = '✦'
+let g:gitgutter_sign_removed_first_line = '➘'
+let g:gitgutter_sign_modified_removed = '⤰'
+
+"ignore whitespaces
+let g:gitgutter_diff_args = '-w'
+let g:gitgutter_highlight_lines = 1
+
 " }}}
