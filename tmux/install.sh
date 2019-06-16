@@ -17,10 +17,10 @@ if ! is_app_installed tmux; then
 	exit 1
 fi
 
-if [ ! -e "$HOME/dotfiles/tmux/plugins/tpm" ]; then
+if [ ! -e "$HOME/dotfiles/tmux/plugins/tpm/tpm" ]; then
 	printf "WARNING: Cannot found TPM (Tmux Plugin Manager) \
 		at default location: \$HOME/dotfiles/tmux/plugins/tpm.\n"
-		git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
+		git clone https://github.com/tmux-plugins/tpm ~/dotfiles/tmux/plugins/tpm
 fi
 
 if [ -e "$HOME/.tmux.conf" ]; then
