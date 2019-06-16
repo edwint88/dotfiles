@@ -19,12 +19,15 @@ __C = Ctrl + a__
 - split horizontal -> C + "
 - next pane -> C + C
 - last pane -> C + ;
-- swap pane -> C + o
+- swap pane -> C + { or }
 - show pane #n -> C + q
 - kill pane -> C + x
 - toggle zoom -> C + z
 - vim pane move -> C + hjkl
 - toggle layouts -> C + space
+
+## Sync Panes
+- :setw synchronize-panes
 
 ## Window
 
@@ -95,4 +98,17 @@ Uses TPM (https://github.com/tmux-plugins/tpm)
 - tmux open (https://github.com/tmux-plugins/tmux-open)
     * o ( + selected text) -> open selected text
     * Ctrl + o ( + selected text) -> open in editor (vim)
-
+- tmux pain control (https://github.com/tmux-plugins/tmux-pain-control)
+	* C + | or - or _ or \ -> to create a pane
+	* C + hjkl -> to move to another pane
+	* C + shift + hjkl -> to increase pane size
+	* C + > or < -> to change window order
+	* set-option -g @pane_resize "10" (default is 5)
+- tmux battery status (https://github.com/tmux-plugins/tmux-battery)
+- tmux cpu and gpu status (https://github.com/tmux-plugins/tmux-cpu)
+- tmux facebook fpp [REQ: install brew install fpp] (https://github.com/tmux-plugins/tmux-fpp)
+	* C + shift + F
+- tmux sidebar (https://github.com/tmux-plugins/tmux-sidebar)
+	* C + tab -> show side bar without focus
+	* C + backspace -> show side bar with focus
+- tmux prefix highlight (https://github.com/tmux-plugins/tmux-prefix-highlight)
