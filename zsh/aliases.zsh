@@ -12,6 +12,9 @@ alias reload!='RELOAD=1 source ~/.zshrc'
 
 # git
 alias logadog='git log --all --decorate --oneline --graph'
+alias git-ci='git commit'
+alias git-a='git add'
+alias git-all='git add *'
 
 # Custom cd
 function cdl() {

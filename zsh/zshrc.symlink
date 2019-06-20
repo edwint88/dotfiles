@@ -48,7 +48,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 export ZSH=$HOME/dotfiles/oh-my-zsh
 
 #activate plugins
-plugins=(git git-flow history-substring-search zsh-navigation-tools zsh-autosuggestions zsh-completions zsh-syntax-highlighting)
+plugins=(git git-flow history-substring-search zsh-navigation-tools zsh-autosuggestions zsh-completions zsh-syntax-highlighting zsh-apple-touchbar)
 
 source $ZSH/oh-my-zsh.sh
 autoload -Uz compinit && compinit
