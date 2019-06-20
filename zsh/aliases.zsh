@@ -16,6 +16,9 @@ alias git-ci='git commit -m'
 alias git-a='git add'
 alias git-all='git add *'
 alias git-st='git status'
+alias git-pso='git push origin'
+alias git-pl='git pull'
+alias git-f='git fetch'
 
 # Custom cd
 function cdl() {
