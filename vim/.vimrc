@@ -151,6 +151,15 @@ Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
+" maokai 
+Plugin 'tomasr/molokai'
+
+"super tab
+Plugin 'ervandew/supertab'
+
+" rainbow ()
+Plugin 'luochen1990/rainbow'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -201,9 +210,9 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " gitgutter options
-highlight GitGutterAdd    guifg=#009900 guibg=<#073642> ctermfg=2 ctermbg=0
-highlight GitGutterChange guifg=#bbbb00 guibg=<#073642> ctermfg=3 ctermbg=0
-highlight GitGutterDelete guifg=#ff2222 guibg=<#073642> ctermfg=1 ctermbg=0
+highlight GitGutterAdd    guifg=#009900 guibg=#212121 ctermfg=2 ctermbg=0
+highlight GitGutterChange guifg=#bbbb00 guibg=#212121 ctermfg=3 ctermbg=0
+highlight GitGutterDelete guifg=#ff2222 guibg=#212121 ctermfg=1 ctermbg=0
 
 let g:gitgutter_sign_added = '✓'
 let g:gitgutter_sign_removed = '✗'
@@ -214,5 +223,7 @@ let g:gitgutter_sign_modified_removed = '⤰'
 "ignore whitespaces
 let g:gitgutter_diff_args = '-w'
 let g:gitgutter_highlight_lines = 1
+
+let g:rehash256 = 1
 
 " }}}
