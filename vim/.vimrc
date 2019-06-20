@@ -42,25 +42,14 @@ set foldlevel=1
 set cul cuc
 filetype off
 
-" set over lenght to 121
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+"set over lenght to 121
+highlight OverLength ctermbg=30 ctermfg=white guibg=#212121
 match OverLength /\%121v.\+/
 if exists('+colorcolumn')
 	set colorcolumn=120
   else
 	au BufWinEnter * let w:m2=matchadd('ErrorMsg', '\%>120v.\+', -1)
 endif
-
-" Change cursor shape between insert and normal mode in iTerm2.app
-if $TERM_PROGRAM =~ "iTerm"
-     let &t_SI = "\<Esc>]50;CursorShape=1\x7" " Vertical bar in insert mode
-     let &t_EI = "\<Esc>]50;CursorShape=0\x7" " Block in normal mode
-endif
-
-" switch cursor to line when in insert mode, and block when not
-set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50
-   \,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor
-     \,sm:block-blinkwait175-blinkoff150-blinkon175
 
 " make comments and HTML attributes italic
 highlight Comment cterm=italic
@@ -160,6 +149,9 @@ Plugin 'ervandew/supertab'
 " rainbow ()
 Plugin 'luochen1990/rainbow'
 
+" toggle cursor
+Plugin 'jszakmeister/vim-togglecursor'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -210,9 +202,14 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " gitgutter options
-highlight GitGutterAdd    guifg=#009900 guibg=#212121 ctermfg=2 ctermbg=0
-highlight GitGutterChange guifg=#bbbb00 guibg=#212121 ctermfg=3 ctermbg=0
-highlight GitGutterDelete guifg=#ff2222 guibg=#212121 ctermfg=1 ctermbg=0
+highlight GitGutterAdd			guifg=#009900 guibg=#212121 ctermfg=2 ctermbg=0
+highlight GitGutterChange		guifg=#bbbb01 guibg=#212121 ctermfg=3 ctermbg=0
+highlight GitGutterDelete		guifg=#ff2222 guibg=#212121 ctermfg=1 ctermbg=0
+highlight GitGutterChangeDelete guifg=#b90ec9 guibg=#212121 ctermfg=4 ctermbg=0
+highlight link GitGutterAddLine Type
+highlight link GitGutterDeleteLine ErrorMsg
+highlight link GitGutterChangeLine Todo
+highlight link GitGutterChangeDeleteLine DiffAdd
 
 let g:gitgutter_sign_added = '✓'
 let g:gitgutter_sign_removed = '✗'
@@ -220,10 +217,11 @@ let g:gitgutter_sign_modified = '✦'
 let g:gitgutter_sign_removed_first_line = '➘'
 let g:gitgutter_sign_modified_removed = '⤰'
 
-"ignore whitespaces
-let g:gitgutter_diff_args = '-w'
-let g:gitgutter_highlight_lines = 1
+" ignore whitespaces
+let g:gitgutter_diff_args='-w'
+let g:gitgutter_highlight_lines=1
 
-let g:rehash256 = 1
+" maokai template
+" let g:rehash256 = 1
 
 " }}}
