@@ -15,16 +15,15 @@ else
 	rvm -v;
 fi
 
-# check if the zsh2000 is empty
-if [ -z "$(ls -A "$HOME_DOTFILES/themes/zsh2000")" ]; then
-	rmdir "$HOME_DOTFILES/theme/zsh2000";
-else
-	echo "zsh2000 module files are available";
-fi
-
 # clone theme if is not clonned
 if [ ! -d "$HOME_DOTFILES/themes/zsh2000" ]; then
-	git clone https://github.com/maverick9000/zsh2000.git "$HOME_DOTFILES/themes/zsh2000";
+	# check if the zsh2000 is empty
+	if [ -z "$(ls -A "$HOME_DOTFILES/themes/zsh2000")" ]; then
+		rmdir "$HOME_DOTFILES/theme/zsh2000";
+		git clone https://github.com/maverick9000/zsh2000.git "$HOME_DOTFILES/themes/zsh2000";
+	else
+		echo "zsh2000 module files are available";
+	fi
 else
 	echo "theme already clonned";
 fi
