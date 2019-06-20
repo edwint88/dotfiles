@@ -13,4 +13,12 @@ else
 	echo "material design already downloaded";
 fi
 
+# change shell
+if [[ $(command which zsh) == *"not found" ]]; then
+	echo "please install zsh";
+	exit 1;
+else
+	command chsh -s "$(command which zsh)";
+fi
+
 #to be continued
