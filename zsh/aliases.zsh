@@ -40,3 +40,11 @@ alias ta="tmux attach -d -t"
 alias tm="tmux ls"
 alias tms="tmux new -s"
 alias tks="tmux kill-session -t"
+
+# docker aliases
+alias dkps="docker ps"
+alias dkpsa="docker ps -a"
+alias dkim="docker images"
+alias dkrm="docker rm -f"
+alias dkrmi="docker rmi -f"
+alias dkins="docker inspect"
