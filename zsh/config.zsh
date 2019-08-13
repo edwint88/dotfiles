@@ -9,11 +9,11 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 # history stuff
-setopt HIST_VERIFY # don't immediately run a command when loading it with something like !$, but show for preview
+setopt HIST_VERIFY # don\'t immediately run a command when loading it with something like !$, but show for preview
 setopt SHARE_HISTORY # share history between sessions
 setopt EXTENDED_HISTORY # add timestamps to history
 setopt APPEND_HISTORY # adds history, instead of obliterating the entire file per shell
-setopt HIST_IGNORE_DUPS  # don't record dupes in history, if they happen directly after each other (but en masse dupes allowed)
+setopt HIST_IGNORE_DUPS  # don\'t record dupes in history, if they happen directly after each other (but en masse dupes allowed)
 setopt HIST_REDUCE_BLANKS # i think this means trim commands, docs unclear...
 #setopt INC_APPEND_HISTORY # this is implied by SHARE_HISTORY, and docs say not to do both
 
