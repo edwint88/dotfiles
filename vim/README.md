@@ -8,6 +8,8 @@ To install from command line: vim +PluginInstall +qall
 
 # commands
 
+gg=G OR =G - auto format
+
 $ - go to end line\
 ^ or 0 or g0 - go to first char of the line\
 N | - go to N column\
