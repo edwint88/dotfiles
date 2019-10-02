@@ -9,6 +9,7 @@ fi
 
 # reload zsh config
 alias reload!='RELOAD=1 source ~/.zshrc'
+alias show-zsh-alias="cat ~/dotfiles/zsh/aliases.zsh"
 
 # git
 alias logadog='git log --all --decorate --oneline --graph'
@@ -47,6 +48,7 @@ alias ta="tmux attach -d -t"
 alias tm="tmux ls"
 alias tms="tmux new -s"
 alias tks="tmux kill-session -t"
+alias show-tm="cat ~/dotfiles/tmux/README.md"
 
 # docker aliases
 alias dkps="docker ps"
