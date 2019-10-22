@@ -75,7 +75,7 @@ set backspace=indent,eol,start
 set clipboard=unnamed
 
 set ttyfast                 " faster redrawing
-set diffopt+=vertical
+set diffopt=vertical
 set laststatus=2            " show the satus line all the time
 set so=7                    " set 7 lines to the cursors - when moving vertical
 set wildmenu                " enhanced command line completion
