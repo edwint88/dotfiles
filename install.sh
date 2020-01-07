@@ -50,4 +50,41 @@ if [[ -z "$(ls -A "$HOME_DOTFILES/oh-my-zsh/custom/plugins/zsh-apple-touchbar")"
 else
 	echo "zsh-apple-touchbar plugin is already installed";
 fi
+
+# install brew
+
+# which brew => not found? => install
+
+## TODO
+
+# Ruby installed? 
+# /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+# no ruby? 
+# mkdir homebrew && curl -L https://github.com/Homebrew/brew/tarball/master | tar xz --strip 1 -C homebrew
+
+# which brew? => should be installed
+
+# install jenv for java versions
+
+brew install jenv
+
+# setup jenv
+
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ./zsh/zshrc.symlink
+echo 'eval "$(jenv init -)"'>> ./zsh/zshrc.symlink
+
+# install cask versions
+brew tap homebrew/cask-versions
+
+# install java versions
+
+brew cask install java11
+
+# add java13 to jenv
+
+jenv add /Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/home
+
+echo "Now you can do 'jenv versions' --- 'jenv glboal #version' ---- 'jenv local #version' ---- 'jenv shell #version'"
+
+
 #to be continued
