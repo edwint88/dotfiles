@@ -15,8 +15,8 @@ __C = Ctrl + a__
 ## Panes
 
 - break pane -> C + !
-- split vertical -> C + %
-- split horizontal -> C + "
+- split vertical -> C + % or C + | or C + \
+- split horizontal -> C + " or C + _ or C + -
 - next pane -> C + C
 - last pane -> C + ;
 - swap pane -> C + { or }
