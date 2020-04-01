@@ -51,10 +51,18 @@ export ZSH=$HOME/dotfiles/oh-my-zsh
 #activate plugins
 plugins=(git git-flow history-substring-search zsh-navigation-tools zsh-autosuggestions zsh-completions zsh-syntax-highlighting zsh-apple-touchbar)
 
+
+# jenv
+# export JENV_ROOT=/usr/local/opt/jenv
+
+if which jenv > /dev/null;then 
+	eval "$(jenv init -)";
+fi
+
 source $ZSH/oh-my-zsh.sh
 autoload -Uz compinit && compinit
 
 unset config_files
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="/usr/local/sbin:$PATH:$HOME/.rvm/bin:$HOME/.jenv/bin"
+export PATH="/usr/local/sbin:$PATH:$HOME/.rvm/bin:$HOME/.jenv/bin:$HOME/.jenv/shims"

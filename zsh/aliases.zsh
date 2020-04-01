@@ -31,6 +31,12 @@ function cdl() {
 # file system
 alias cls='clear'
 
+# tar
+alias tarls='tar -tvf'
+alias targzls='tar -ztvf'
+alias untar='tar -xvf'
+alias untargz='tar -xvzf'
+
 #alias cd='cdl'
 alias ..='cdl ..'
 alias ...='cdl ../..'
