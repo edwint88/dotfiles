@@ -152,6 +152,20 @@ Plugin 'luochen1990/rainbow'
 " toggle cursor
 Plugin 'jszakmeister/vim-togglecursor'
 
+" undotree - history of undo
+Plugin 'mbbill/undotree'
+
+" tagbar - diplays tags in a window
+Plugin 'majutsushi/tagbar'
+
+" nerdcommenter
+Plugin 'scrooloose/nerdcommenter'
+
+" git in vim
+Plugin 'tpope/vim-fugitive'
+
+Plugin 'lokaltog/vim-powerline'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -179,12 +193,13 @@ filetype plugin indent on    " required
 " Toggle NERDTree
 nmap <silent> <leader>k :NERDTreeToggle<cr>
 " expand to the path of the file in the current buffer
- nmap <silent> <leader>y :NERDTreeFind<cr>
+nmap <silent> <leader>y :NERDTreeFind<cr>
 
 let NERDTreeShowHidden=1
 let NERDTreeDirArrowExpandable = '▷'
 let NERDTreeDirArrowCollapsible = '▼'
 
+" fuzzy search
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
@@ -221,7 +236,13 @@ let g:gitgutter_sign_modified_removed = '⤰'
 let g:gitgutter_diff_args='-w'
 let g:gitgutter_highlight_lines=1
 
+" undo tree map key
+nnoremap <F5> :UndotreeToggle<cr>
+
+" tagbar toggle
+nmap <F8> :TagbarToggle<CR>
+
 " maokai template
-" let g:rehash256 = 1
+let g:rehash256 = 1
 
 " }}}

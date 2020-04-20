@@ -93,5 +93,11 @@ vsp nameFile - open the file in a vertical split window
 
 ctrl + p - fuzzy search
 
+F5 - undotree
+F8 - tagtar (see functions headers)
+
+:Git or :G + diff merge etc. more on :help fugitive
+
+
 # SO subjects
 https://stackoverflow.com/questions/46216382/comparing-files-with-itself-in-vim-or-any-other-method/46217823#46217823

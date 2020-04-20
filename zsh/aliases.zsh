@@ -14,6 +14,7 @@ alias show-zsh-alias="cat ~/dotfiles/zsh/aliases.zsh"
 # git
 alias logadog='git log --all --decorate --oneline --graph'
 alias git-ci='git commit -m'
+alias git-co='git checkout'
 alias git-a='git add'
 alias git-all='git add *'
 alias git-st='git status'
