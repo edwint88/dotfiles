@@ -25,7 +25,7 @@ __C = Ctrl + a__
 - vim pane move -> C + hjkl
 - toggle layouts -> C + space
 - break pane -> C + !
-- join pane -> C + : join-pane -t <Main Window Name> -h or -v
+- join pane -> C + : join-pane -t \<Main Window Name\> -h or -v
 
 ## Sync Panes
 - C + : setw synchronize-panes on / off
