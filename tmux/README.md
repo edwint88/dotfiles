@@ -14,7 +14,6 @@ __C = Ctrl + a__
 
 ## Panes
 
-- break pane -> C + !
 - split vertical -> C + % or C + | or C + \
 - split horizontal -> C + " or C + _ or C + -
 - next pane -> C + C
@@ -25,6 +24,8 @@ __C = Ctrl + a__
 - toggle zoom -> C + z
 - vim pane move -> C + hjkl
 - toggle layouts -> C + space
+- break pane -> C + !
+- join pane -> C + : join-pane -t <Main Window Name> -h or -v
 
 ## Sync Panes
 - C + : setw synchronize-panes on / off
