@@ -63,6 +63,9 @@ else
 	echo "brew is already installed";
 fi
 
+# install cask versions
+brew tap homebrew/cask-versions
+
 # install jenv for java versions
 brew install jenv
 
@@ -70,8 +73,9 @@ brew install jenv
 echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ./zsh/zshrc.symlink
 echo 'eval "$(jenv init -)"'>> ./zsh/zshrc.symlink
 
-# install cask versions
-brew tap homebrew/cask-versions
+# install irc - irssi
+brew install irssi
+cp $HOME_DOTFILES/themes/agon.theme ~/.irssi/
 
 # install keepassxc for macos
 brew cask install keepassxc
