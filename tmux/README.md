@@ -27,7 +27,7 @@ __C = Ctrl + a__
 - toggle layouts -> C + space
 
 ## Sync Panes
-- :setw synchronize-panes
+- C + : setw synchronize-panes on / off
 
 ## Window
 
