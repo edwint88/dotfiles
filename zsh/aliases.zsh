@@ -64,3 +64,16 @@ alias dkim="docker images"
 alias dkrm="docker rm -f"
 alias dkrmi="docker rmi -f"
 alias dkins="docker inspect"
+
+# k8s aliases
+alias k="kubectl"
+alias kpodsw="kubectl get pods -o wide"
+alias kpods="kubectl get pods"
+alias knodes="kubectl get nodes"
+alias knodesw="kubectl get nodes -o wide"
+alias kdeploy="kubectl get deploy"
+alias ksvc="kubectl get svc"
+alias ksvcw="kubectl get svc -o wide"
+alias kpvc="kubectl get pvc -o wide"
+alias kaf="kubectl apply -f"
+
