@@ -22,6 +22,11 @@ alias git-pso='git push origin'
 alias git-pl='git pull'
 alias git-f='git fetch'
 
+# git flow
+alias flow-initd='git flow init -d'
+alias flow-fstart='git flow feature start'
+alias flow-fpub='git flow feature publish'
+
 # Custom cd
 function cdl() {
  	cd $1;
