@@ -36,6 +36,9 @@ tmux list-buffers\
 tmux show-buffer -b n\
 tmux save-buffer -b n foo.txt
 
+## other tools
+https://github.com/sharkdp/bat
+
 ### Links
 https://awhan.wordpress.com/2010/06/20/copy-paste-in-tmux/
 
