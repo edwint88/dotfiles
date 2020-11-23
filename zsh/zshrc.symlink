@@ -54,6 +54,10 @@ select-word-style bash
 # matches case insensitive for lowercase
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+# K8s
+source <(kubectl completion zsh)
+complete -F __start_kubectl k
+
 # load plugins
 export ZSH=$HOME/dotfiles/oh-my-zsh
 
