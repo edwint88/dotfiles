@@ -63,8 +63,6 @@ else
 	echo "brew is already installed";
 fi
 
-# install cask versions
-brew tap homebrew/cask-versions
 
 # install jenv for java versions
 brew install jenv
@@ -78,13 +76,13 @@ brew install irssi
 cp $HOME_DOTFILES/themes/agon.theme ~/.irssi/
 
 # install keepassxc for macos
-brew cask install keepassxc
+brew install --cask keepassxc
 
 # install k9s
 brew install derailed/k9s/k9s 
 
 # install nmap
-brew cask install zenmap
+brew install --cask zenmap
 # brew install nmap
 
 # install tmux
@@ -105,13 +103,13 @@ brew install ffmpeg
 brew install maven
 
 # install postman
-brew cask install postman
+brew install --cask postman
 
 # install java versions
-brew cask install java11
+brew install java11
 
 # add java13 to jenv
-jenv add /Library/Java/JavaVirtualMachines/openjdk-11.0.2.jdk/Contents/home
+echo "jenv add /path"
 
 echo "Now you can do 'jenv versions' --- 'jenv glboal #version' ---- 'jenv local #version' ---- 'jenv shell #version'"
 

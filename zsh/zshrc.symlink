@@ -79,3 +79,5 @@ unset config_files
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="/usr/local/sbin:$PATH:$HOME/.rvm/bin:$HOME/.jenv/bin:$HOME/.jenv/shims"
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
